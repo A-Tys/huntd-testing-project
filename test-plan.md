@@ -55,7 +55,7 @@ The main objectives of testing are:
 - Validate usability and user experience across web and mobile platforms
 - Ensure sufficient test coverage for all in-scope modules
 - Perform limited compatibility testing on supported browsers and mobile devices
-- Perform basic security verification including authentication, input validation, cookie handling, and injection attempt checks
+- Perform basic security verification including authentication, input validation, injection attempt checks
 
 ### 2.3 Test Basis
 - Module requirements document
@@ -88,7 +88,7 @@ The main objectives of testing are:
   - **Security Testing** — basic security verification including authentication, input validation, injection attempts, and cookie security using a grey-box approach via DevTools
   - **Compatibility Testing** — limited verification of application behavior across supported browsers and mobile devices
 - **Black-box Testing** — testing based on specifications and expected system behavior without access to internal implementation details
-- **Grey-box Testing** — testing performed with partial knowledge of the internal system structure using browser DevTools, network inspection, cookies, and local storage analysis
+- **Grey-box Testing** — testing performed with partial knowledge of the internal system structure using browser DevTools
 
 ### 3.2 Test Techniques
 
