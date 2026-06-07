@@ -1,6 +1,4 @@
-# Test Plan — Huntd QA Project
-
----
+# Test Plan — Huntd Web & Mobile Applications
 
 ## 1. Introduction
 
@@ -42,20 +40,13 @@ The mobile application is an MVP version focused on communication and profile-re
 - Mobile feature/improvement requests
 
 ### 2.2 Test Objectives
-The main objectives of testing are:
 - Verify that the Huntd web and mobile applications function according to specified requirements
 - Identify, document, and report defects discovered during testing
-- Verify the functionality of core features including:
-  - Authentication
-  - Candidate search and filtering
-  - Candidate profiles
-  - Chats
-  - Profile management
-  - Web3 companies and jobs functionality
+- Verify the functionality of core features
 - Validate usability and user experience across web and mobile platforms
 - Ensure sufficient test coverage for all in-scope modules
 - Perform limited compatibility testing on supported browsers and mobile devices
-- Perform basic security verification including authentication, input validation, injection attempt checks
+- Perform basic security verification including authentication, input validation, and injection attempt checks
 
 ### 2.3 Test Basis
 - Module requirements document
@@ -93,30 +84,31 @@ The main objectives of testing are:
 ### 3.2 Test Techniques
 
 **Black-box Test Techniques:**
-- Equivalence Partitioning
+- Equivalence Partitioning *(also applied to components sharing identical functionality — dropdown fields with the same behavior are treated as one equivalence class; shared functionality is tested once on a representative instance)*
 - Boundary Value Analysis
 - Decision Table Testing
 - State Transition Testing
 - Use Case Testing
 
 ### 3.3 Levels of Testing
-- System testing will be performed for the Huntd web and mobile applications
-- End-to-end testing will be performed for critical user flows such as registration, authentication, candidate search, profile management, and chat functionality
+- **System Testing** — performed for the Huntd web and mobile applications
+- **End-to-End Testing** — performed for critical user flows such as registration, authentication, candidate search, profile management, and chat functionality
 
 ---
 
 ## 4. Test Deliverables
-The following testing deliverables will be prepared during the testing process:
-- Test Plan
-- Test Cases for web application features
-- Test Cases for mobile application features
-- Requirements Traceability Matrix (RTM)
-- Permission Testing Table
-- Jira stories and related tasks
-- Bug Reports
-- Test Runs in TestRail
-- Test Summary Report
-- Test execution statistics for web and mobile applications
+
+| Deliverable | Description |
+|---|---|
+| Test Plan | This document |
+| Test Cases (Web) | Test cases for all in-scope web application features |
+| Test Cases (Mobile) | Test cases for all in-scope mobile application features |
+| RTM | Requirements Traceability Matrix |
+| Permission Testing Table | Role-based access verification |
+| Jira Stories & Tasks | Project tracking items |
+| Bug Reports | Defects identified during testing |
+| Test Runs | Execution records in TestRail |
+| Test Summary Report | Final execution statistics and findings |
 
 ---
 
@@ -140,8 +132,11 @@ Testing activities may be considered complete when the following conditions are 
 ---
 
 ## 6. Risks
-- Limited testing time may reduce overall test coverage
-- Missing mobile application specifications may lead to incomplete validation
-- Production environment limitations may affect testing stability and data consistency
-- Limited browser and device availability may reduce compatibility coverage
-- Some identified defects may remain unresolved within the academy project scope
+
+| Risk | Impact |
+|---|---|
+| Limited testing time | May reduce overall test coverage |
+| Missing mobile application specifications | May lead to incomplete validation |
+| Production environment limitations | May affect testing stability and data consistency |
+| Limited browser and device availability | May reduce compatibility coverage |
+| Unresolved defects | Some identified defects may remain unresolved within the academy project scope |
