@@ -23,4 +23,4 @@
 | **WEB3 COMPANIES & JOBS** |||||
 | 13 | View all vacancies (\[View More\]) | ❌ | ✅ | ✅ | |
 | 14 | Post a job / import from ATS | ❌ | ✅* | ✅ | \* Candidate users prompted to create Recruiter profile |
-| 15 | Apply with 1 click | ❌ | ✅ | ✅* | \* Recruiter users prompted to create Candidate profile |
+| 15 | Apply with 1 click | ❌ | ✅ | ✅* | \* Recruiter users prompted to create Candidate profile |code 
