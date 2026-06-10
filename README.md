@@ -15,12 +15,12 @@ My approach extends beyond identifying defects to investigating reproduction con
 ├── test-plan.md
 ├── permission-testing-table.md
 ├── web-app/
-│   ├── defect-reports/             # 17 bug reports
+│   ├── defect-reports/             
 │   ├── evidence-screenshots/
 │   ├── jira-test-runs-summary.md
 │   └── requirements-traceability-matrix.md
 └── mobile-app/
-    ├── defect-reports/             # 6 bug reports
+    ├── defect-reports/             
     ├── evidence-screenshots/
     ├── jira-test-runs-summary.md
     └── requirements-traceability-matrix.md
