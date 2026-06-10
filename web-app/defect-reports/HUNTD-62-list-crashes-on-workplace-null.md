@@ -1,4 +1,4 @@
-# HUNTD-60 — Candidates List Page Crashes for Recruiter Role During Pagination When Candidate Profiles with Null `workPlaces` Are Loaded
+# HUNTD-62 — Candidates List Page Crashes for Recruiter Role During Pagination When Candidate Profiles with Null `workPlaces` Are Loaded
 
 **Severity:** Critical  
 **Priority:** High
