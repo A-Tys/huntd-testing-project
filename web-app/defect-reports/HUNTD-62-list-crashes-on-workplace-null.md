@@ -87,6 +87,5 @@ The query returned profiles with `workPlaces: null` at the crash offset. The con
 
 ## Evidence
 
-![Blank white screen after crash](../evidence-screenshots/candidates_list_crash_white_screen.png)
-![Console error — TypeError on undefined workPlaces](../evidence-screenshots/candidates_list_crash_console_error.JPG)
-![DevTools query identifying null workPlaces profiles](../evidence-screenshots/candidates_list_null_workplaces_console.JPG)
+![Console error — TypeError on undefined workPlaces](../evidence-screenshots/null_workpl_console_error.png)
+![DevTools query identifying null workPlaces profiles](../evidence-screenshots/null_workpl_response.png)
