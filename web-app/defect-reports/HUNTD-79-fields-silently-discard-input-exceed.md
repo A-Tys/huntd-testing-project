@@ -74,3 +74,5 @@ The server enforces a `character varying(255)` database constraint. No correspon
 ## Additional Notes
 
 Affects both "Role" and "Company Name" fields on the Experience page.
+
+![255 char silent failure - Recruiter Company Details](../evidence-screenshots/255char_exceed_silent_failure.png)
