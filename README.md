@@ -57,11 +57,11 @@ A selection of findings that required investigation beyond the surface:
 
 | Report | Finding | Investigation |
 |---|---|---|
-| [HUNTD-62](./web-app/defect-reports/HUNTD-62-candidates-list-crashes-recruiter-null-workplaces.md) | Candidates List crashes for Recruiter role during pagination | Production crash isolated by role — Candidate unaffected on identical data. Offending profiles identified via DevTools console query at crash offset |
-| [HUNTD-58](./web-app/defect-reports/HUNTD-58-profile-reactivation-creates-duplicate-chats-and-contact-history.md) | Profile reactivation creates duplicate chats and inflates contact history | Architectural finding — profile ID regeneration traced across edit cycles (`candidateProfileId: 13173 → 13176 → 13179`) breaking all existing recruiter-candidate relationships |
-| [HUNTD-73](./web-app/defect-reports/HUNTD-73-cancelled-oauth-creates-persistent-connections-incorrect-disconnect-state.md) | Cancelled OAuth attempts persist ghost tokens for all three providers | All providers sharing the same `providerId` from the initiating account — confirmed via Apollo cache inspection |
-| [HUNTD-65](./web-app/defect-reports/HUNTD-65-chat-records-persist-after-deletion-remain-accessible.md) | Deleted chats persist in DB and trigger `SequelizeUniqueConstraintError` on subsequent messages | Full GraphQL mutation analysis for both Recruiter and Candidate roles — `code: 23505` captured in both directions |
-| [HUNTD-81](./web-app/defect-reports/HUNTD-81-experience-creation-form-resets-on-255-char-limit.md) | `varchar(255)` violation triggers PostgreSQL `25P02` transaction abort | Not only does the creation fail silently — the aborted transaction blocks all subsequent saves in the same session until page reload |
+| [HUNTD-62](./web-app/defect-reports/HUNTD-62-list-crashes-on-workplace-null.md) | Candidates List crashes for Recruiter role during pagination | Production crash isolated by role — Candidate unaffected on identical data. Offending profiles identified via DevTools console query at crash offset |
+| [HUNTD-58](./web-app/defect-reports/HUNTD-58-duplicate-chats-and-contact-his.md) | Profile reactivation creates duplicate chats and inflates contact history | Architectural finding — profile ID regeneration traced across edit cycles (`candidateProfileId: 13173 → 13176 → 13179`) breaking all existing recruiter-candidate relationships |
+| [HUNTD-73](./web-app/defect-reports/HUNTD-73-cancelled-oauth-creates-connections.md) | Cancelled OAuth attempts persist ghost tokens for all three providers | All providers sharing the same `providerId` from the initiating account — confirmed via Apollo cache inspection |
+| [HUNTD-65](./web-app/defect-reports/HUNTD-65-chat-records-persist-after-deletion.md) | Deleted chats persist in DB and trigger `SequelizeUniqueConstraintError` on subsequent messages | Full GraphQL mutation analysis for both Recruiter and Candidate roles — `code: 23505` captured in both directions |
+| [HUNTD-81](./web-app/defect-reports/HUNTD-81-form-creation-resets-on-255-char-limit.md) | `varchar(255)` violation triggers PostgreSQL `25P02` transaction abort | Not only does the creation fail silently — the aborted transaction blocks all subsequent saves in the same session until page reload |
 
 ---
 
