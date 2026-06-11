@@ -2,7 +2,7 @@
 
 ## About
 
-This portfolio showcases end-to-end testing artifacts created while testing Huntd — a web3-oriented recruitment platform with shared GraphQL backend services across web and mobile applications.
+This portfolio showcases testing artifacts created while testing Huntd — a web3-oriented recruitment platform with shared GraphQL backend services across web and mobile applications.
 
 My approach extends beyond identifying defects to investigating reproduction conditions, isolating failure triggers, and forming evidence-based root cause hypotheses using browser DevTools, GraphQL analysis, ADB logcat, and database error investigation.
 
